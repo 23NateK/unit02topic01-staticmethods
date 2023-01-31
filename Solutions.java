@@ -41,14 +41,35 @@ public class Solutions {
 
     //majority
     public static boolean majority(boolean a,boolean b, boolean c){
-
+        int truenum = 0;
+        int falsenum = 0;
+        if (a){
+            truenum+=1;
+        }else{
+            falsenum+=1;
+        }
+        if (b){
+            truenum+=1;
+        }else{
+            falsenum+=1;
+        }
+        if (c){
+            truenum+=1;
+        }else{
+            falsenum+=1;
+        }
+        if (truenum>falsenum){
+            return true;
+        }
+        return false;
     }
 
 
     
     public static void main(String[] args) {
-        System.out.println(max3(2.5,4,2.5));
+        System.out.println(max3(2,4,1));
         System.out.println(odd(true,true,true));
+        System.out.println(majority(true, true, false));
 
 
 
