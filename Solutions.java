@@ -64,13 +64,18 @@ public class Solutions {
         return false;
     }
 
+    //trigIdentity
+    public static double trigIdentity(double x){
+        double result = Math.pow(Math.sin(x),2)+Math.pow(Math.cos(x),2);
+        return result;
+    }
 
     
     public static void main(String[] args) {
         System.out.println(max3(2,4,1));
         System.out.println(odd(true,true,true));
         System.out.println(majority(true, true, false));
-
+        System.out.println(trigIdentity(23.2));
 
 
 
