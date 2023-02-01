@@ -41,25 +41,23 @@ public class Solutions {
 
     //majority
     public static boolean majority(boolean a,boolean b, boolean c){
-        int truenum = 0;
-        int falsenum = 0;
-        if (a){
-            truenum+=1;
-        }else{
-            falsenum+=1;
+        while (a){
+            while(b){
+                while(c){
+                    return true;
+                }
+                return true;
+            }
+            return false;
         }
-        if (b){
-            truenum+=1;
-        }else{
-            falsenum+=1;
-        }
-        if (c){
-            truenum+=1;
-        }else{
-            falsenum+=1;
-        }
-        if (truenum>falsenum){
-            return true;
+        while (!a){
+            while(b){
+                while(c){
+                    return true;
+                }
+                return false;
+            }
+            return false;
         }
         return false;
     }
@@ -74,7 +72,7 @@ public class Solutions {
     public static void main(String[] args) {
         System.out.println(max3(2,4,1));
         System.out.println(odd(true,true,true));
-        System.out.println(majority(true, true, false));
+        System.out.println(majority(false, true, true));
         System.out.println(trigIdentity(23.2));
 
 
