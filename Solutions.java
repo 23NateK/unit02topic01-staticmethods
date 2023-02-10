@@ -40,6 +40,7 @@ public class Solutions {
     }
 
     //majority
+    // BUG: majority(true, false, true) -> false
     public static boolean majority(boolean a,boolean b, boolean c){
         while (a){
             while(b){
